@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+    background: #73B5BD;
+}
+
+.container form {
+    width: 700px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+}
+
+.col .title{
+    font-size: 20px;
+    color: #5e8f94;
+    padding-bottom: 5px;
+}
+
+.col .inputBox{
+    margin: 15px 0;
+}
+
+.col .inputBox label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.col .inputBox input, .col .inputBox select{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.col .inputBox input:focus, 
+.col .inputBox select:focus{
+    border: 1px solid #000;
+}
+
+.col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.col .flex .inputBox{
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit_btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #5e8f94;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.container form .submit_btn:hover{
+    background: #73B5BD;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+.footer-dist {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+}
+.footer-dist .footer-left,  .footer-center,  .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-dist .footer-left {
+    width: 30%;
+}
+
+.footer-dist h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+.footer-dist h3 span {
+    color: #e0ac1c;
+}
+.footer-dist .links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+.footer-dist .links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-dist .footer-center {
+    width: 35%;
+}
+
+.footer-dist .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-dist .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-dist .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-dist .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+.footer-dist .footer-right {
+    width: 30%;
+}
+.footer-dist .about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-dist .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* .footer-dist .icons {
+    margin-top: 25px;
+}
+.footer-dist .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+} */
+/* .footer-dist .icons a:hover {
+    background-color: #3F71EA;
+} */
+.links a:hover {
+    color: #3F71EA;
+}
+@media (max-width: 880px) {
+    .footer-dist .footer-left, .footer-center, .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-dist .footer-center i {
+        margin-left: 0;
+    }
+}       

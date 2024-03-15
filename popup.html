@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content= 
+          "width=device-width, initial-scale=1.0"> 
+          <link rel="stylesheet" href="popup.css">
+    <title>Contact Form</title> 
+ 
+</head> 
+<body> 
+  
+  <button class="btn-open-popup" onclick="togglePopup()">Open Contact Form</button> 
+
+  <div id="overlay" 
+       class="ocontainer"> 
+      <div class="popup-box"> 
+          <h2 style="color: rgb(118, 49, 6);">Contact US</h2> 
+          <form class="fcontainer"> 
+              <label class="form-label"for="name">Email:</label> 
+              <input class="form-input" type="text" placeholder="Write Your Email"id="name" name="name" required> 
+              <label class="form-label" for="message">Message:</label> 
+              <input class="form-input" type="text" id="message" name="message" required> 
+              <button class="btn-submit" type="submit">Send</button> 
+          </form> 
+          <button class="btn-close-popup" onclick="togglePopup()">Close</button> 
+      </div> 
+  </div> 
+ <script src="pop.js"></script>
+</body> 
+  
+</html>
